@@ -28,7 +28,8 @@ const Home = () => {
         </View>       
       </ScrollView>
 
-    </View></SafeAreaView>
+    </View>
+    </SafeAreaView>
   );
 };
 

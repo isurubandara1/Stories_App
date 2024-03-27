@@ -18,6 +18,10 @@ const Home = () => {
           <TouchableOpacity style={styles.imageButton} ><Text style={styles.imageButtonText}>Short Stories</Text></TouchableOpacity>
           <TouchableOpacity style={styles.imageButton} ><Text style={styles.imageButtonText}>Animals Stories</Text></TouchableOpacity>
         </View>
+        <View style={styles.row}>
+          <TouchableOpacity style={styles.imageButton} ><Text style={styles.imageButtonText}>Moral Stories</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.imageButton} ><Text style={styles.imageButtonText}>Life   Stories</Text></TouchableOpacity>
+        </View>
         
       </ScrollView>
 

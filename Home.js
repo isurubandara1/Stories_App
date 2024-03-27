@@ -22,7 +22,10 @@ const Home = () => {
           <TouchableOpacity style={styles.imageButton} ><Text style={styles.imageButtonText}>Moral Stories</Text></TouchableOpacity>
           <TouchableOpacity style={styles.imageButton} ><Text style={styles.imageButtonText}>Life   Stories</Text></TouchableOpacity>
         </View>
-        
+        <View style={styles.row}>
+          <TouchableOpacity style={styles.imageButton} ><Text style={styles.imageButtonText}>Funny Stories</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.imageButton} ><Text style={styles.imageButtonText}>Love Stories</Text></TouchableOpacity>    
+        </View>       
       </ScrollView>
 
     </View></SafeAreaView>

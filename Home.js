@@ -36,7 +36,7 @@ const Home = () => {
 const styles = StyleSheet.create({
   appbar: {
     backgroundColor: "yellowgreen",
-    height: 70,
+    height: 80,
     alignItems: "center",
     justifyContent: "center",
     marginBottom:20,

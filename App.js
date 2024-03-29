@@ -65,3 +65,38 @@ export default App;
 // });
 
 
+
+// import React from 'react';
+// import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
+
+// export const Register = ({ navigation }) => {
+//   return (
+//     <View style={styles.container}>
+//       <TouchableOpacity onPress={() => navigation.navigate('Login')} style={styles.buttonStyle}>
+//         <Text style={styles.textStyle}>Login</Text>
+//       </TouchableOpacity>
+//     </View>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     flexDirection: "row",
+//   },
+//   buttonStyle: {
+//     backgroundColor: 'blue',
+//     padding: 10,
+//     marginRight: 10,
+//     borderRadius: 5,
+//   },
+//   textStyle: {
+//     color: 'white',
+//     fontSize: 20,
+//   },
+// });
+
+
+

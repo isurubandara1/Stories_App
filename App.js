@@ -1,11 +1,12 @@
 import React from "react";
 import { View } from "react-native";
 import Home from "./Home"; 
+import {ShortStory}  from "./ShortStory"; 
 
 const App = () => {
     return (
         <View>
-            <Home />
+            <ShortStory />
         </View>
     );
 };

@@ -3,8 +3,56 @@ import { View, Text, StyleSheet, Image, ScrollView, SafeAreaView, TouchableOpaci
 
 export const ShortStory = () => {
        return (
-           <View style={{height:20, width:"100%", backgroundColor:"plum", justifyContent:"center", alignItems:"center",}}>
-            <Text>Short Stories</Text>
+           <View style={{ backgroundColor:"lightblue", height: "100%"}}>
+            <View style={styles.appbar}><Text style={styles.appbarText}>Short Stories</Text></View>
+            <View style={styles.TopicView}><Text style={styles.FirstTopicText}>Dog and Cat</Text></View>
+            <View style={styles.FirstContentView}><Text style={styles.FirstContent}>We are celebrating Asian Pacific American Heritage Month with Krystal and other members of our Theatre Troupe today, and learning about the ukulele! A small guitar-like instrument, the ukulele is a member of the lute family of instruments and was introduced to Hawaii by Portuguese immigrants from Madeira. Join us as we learn about one of our favorite instruments in this singalong!</Text></View>
            </View>
        );
 }
+
+
+const styles = StyleSheet.create({
+    appbar:{
+        backgroundColor:"blue",
+        height:"10%",
+        justifyContent:"center",
+        alignItems:"center",
+    },
+
+    appbarText:{
+        color:"white",
+        fontSize:30,
+        fontWeight:"bold",
+        
+    },
+
+    TopicView:{
+        marginTop:20,
+        marginBottom:10,
+        
+    },
+
+    FirstTopicText:{
+        color:"black",
+        fontSize:25,
+        fontWeight:"500",
+        paddingLeft:30,
+    },
+
+    FirstContentView:{
+        marginTop:10,
+        marginBottom:10,
+        
+    },
+
+    FirstContent:{
+        color:"black",
+        fontSize:20,
+        fontWeight:"300",
+        paddingLeft:25, 
+        paddingRight:25,
+        textAlign:"justify",
+    },
+    
+});

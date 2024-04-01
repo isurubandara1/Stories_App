@@ -1,37 +1,37 @@
-import React from "react";
-import { View } from "react-native";
-import Home from "./Home"; 
-import {ShortStory}  from "./ShortStory"; 
+// import React from "react";
+// import { View } from "react-native";
+// import Home from "./Home"; 
+// import {ShortStory}  from "./ShortStory"; 
 
-const App = () => {
-    return (
-        <View>
-            <ShortStory />
-        </View>
-    );
-};
+// const App = () => {
+//     return (
+//         <View>
+//             <ShortStory />
+//         </View>
+//     );
+// };
 
-export default App;
+// export default App;
 
-    //App.js
-// import React from 'react';
-// import { createStackNavigator } from '@react-navigation/stack';
-// import { NavigationContainer } from '@react-navigation/native';
-// import { Login } from './Login';
-// import { Register } from './Register';
+//     App.js
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { ShortStory } from './ShortStory';
+import Home from './Home'; // Import Home component from correct path
 
-// const Stack = createStackNavigator();
+const Stack = createStackNavigator();
 
-// export default function App() {
-//   return (
-//     <NavigationContainer>
-//       <Stack.Navigator initialRouteName="Register"> 
-//        <Stack.Screen name="Login" component={Login} /> 
-//         <Stack.Screen name="Register" component={Register} />
-//       </Stack.Navigator>
-//     </NavigationContainer>
-//   );
-// }
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home"> 
+        <Stack.Screen name="Home" component={Home} /> 
+        <Stack.Screen name="ShortStory" component={ShortStory} /> 
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
 
 
     // Login.js

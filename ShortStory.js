@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, ScrollView, SafeAreaView, TouchableOpacity } from "react-native";
 
-export const ShortStory = () => {
+export const ShortStory = (z) => {
        return (
            <SafeAreaView style={{ backgroundColor:"lightblue", height: "100%"}}>
             <View style={styles.appbar}><Text style={styles.appbarText}>Short Stories</Text></View>

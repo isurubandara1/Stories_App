@@ -25,7 +25,7 @@ export const ShortStory = () => {
       </Appbar.Header>
       
       <ScrollView>
-        <View><Image style={styles.firstImage} source={require('./assets/favicon.png')}/></View>
+        <View><Image style={styles.firstImage} source={require('./assets/ShortStory.jpg')}/></View>
         <View style={styles.TopicView}>
           <Text style={styles.TopicText}>Dog and Cat</Text>
         </View>
@@ -108,10 +108,11 @@ const styles = StyleSheet.create({
         textAlign:"center",
       },
       firstImage:{
-        width:200,
-        height:200,
-        marginTop:25,
-        marginLeft:"25%",
+        width:"100%",
+        height:250,
+        resizeMode:"cover",
+        borderBottomLeftRadius:30,
+        borderBottomRightRadius:30,
       },
   
   TopicView: {

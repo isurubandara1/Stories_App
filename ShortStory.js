@@ -17,7 +17,7 @@ export const ShortStory = () => {
       <Appbar.Header style={styles.appbar}>
       <Appbar.BackAction onPress={() => navigation.goBack()} color="white"/>
       <Appbar.Content
-        title="Short Stories"
+        title="Short Stories       "
         titleStyle={styles.title}
       />
         {/* <Appbar.Action icon="calendar" onPress={() => {}} /> */}
@@ -25,6 +25,7 @@ export const ShortStory = () => {
       </Appbar.Header>
       
       <ScrollView>
+        <View><Image style={styles.firstImage} source={require('./assets/favicon.png')}/></View>
         <View style={styles.TopicView}>
           <Text style={styles.TopicText}>Dog and Cat</Text>
         </View>
@@ -97,12 +98,20 @@ export const ShortStory = () => {
 
 const styles = StyleSheet.create({
     appbar: {
-        backgroundColor: 'green',
+        backgroundColor: 'yellowgreen',
       },
       title: {
         fontSize: 28,
         color: 'white',
         fontWeight:"bold",
+        fontStyle:"italic",
+        textAlign:"center",
+      },
+      firstImage:{
+        width:200,
+        height:200,
+        marginTop:25,
+        marginLeft:"25%",
       },
   
   TopicView: {

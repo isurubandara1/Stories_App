@@ -28,7 +28,46 @@ export const ShortStory = () => {
               about one of our favorite instruments in this singalong!
             </Text>
           </View>
-          
+          <View style={styles.ContentView}>
+            <Text style={styles.Content}>
+              We are celebrating Asian Pacific American Heritage Month with
+              Krystal and other members of our Theatre Troupe today, and learning
+              about the ukulele! A small guitar-like instrument, the ukulele is a
+              member of the lute family of instruments and was introduced to
+              Hawaii by Portuguese immigrants from Madeira. Join us as we learn
+              about one of our favorite instruments in this singalong!
+            </Text>
+          </View>
+          <View style={styles.ContentView}>
+            <Text style={styles.Content}>
+              We are celebrating Asian Pacific American Heritage Month with
+              Krystal and other members of our Theatre Troupe today, and learning
+              about the ukulele! A small guitar-like instrument, the ukulele is a
+              member of the lute family of instruments and was introduced to
+              Hawaii by Portuguese immigrants from Madeira. Join us as we learn
+              about one of our favorite instruments in this singalong!
+            </Text>
+          </View>
+          <View style={styles.ContentView}>
+            <Text style={styles.Content}>
+              We are celebrating Asian Pacific American Heritage Month with
+              Krystal and other members of our Theatre Troupe today, and learning
+              about the ukulele! A small guitar-like instrument, the ukulele is a
+              member of the lute family of instruments and was introduced to
+              Hawaii by Portuguese immigrants from Madeira. Join us as we learn
+              about one of our favorite instruments in this singalong!
+            </Text>
+          </View>
+          <View style={styles.ContentView}>
+            <Text style={styles.Content}>
+              We are celebrating Asian Pacific American Heritage Month with
+              Krystal and other members of our Theatre Troupe today, and learning
+              about the ukulele! A small guitar-like instrument, the ukulele is a
+              member of the lute family of instruments and was introduced to
+              Hawaii by Portuguese immigrants from Madeira. Join us as we learn
+              about one of our favorite instruments in this singalong!
+            </Text>
+          </View>
         </ScrollView>
       </ImageBackground>
     </SafeAreaView>

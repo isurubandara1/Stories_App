@@ -18,7 +18,8 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { ShortStory } from './ShortStory';
-import Home from './Home'; // Import Home component from correct path
+import Home from './Home'; 
+import { AnimalStory }from './AnimalStory'; 
 
 const Stack = createStackNavigator();
 
@@ -28,6 +29,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Home"> 
         <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} /> 
         <Stack.Screen name="ShortStory" component={ShortStory} options={{ headerShown: false }} /> 
+        <Stack.Screen name="AnimalStory" component={AnimalStory} options={{ headerShown: false }} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );

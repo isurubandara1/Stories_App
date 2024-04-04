@@ -3,9 +3,8 @@ import { View, Text, StyleSheet, ImageBackground, ScrollView, SafeAreaView } fro
 import { Appbar } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 
-export const ShortStory = () => {
+export const AnimalStory = () => {
   const navigation = useNavigation();
-
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
@@ -13,7 +12,7 @@ export const ShortStory = () => {
           <View style={styles.overlay}>
             <Appbar.Header style={styles.appbar}>
               <Appbar.BackAction onPress={() => navigation.goBack()} color="white" />
-              <Appbar.Content title="Short Stories" titleStyle={styles.title} />
+              <Appbar.Content title="Animal Story" titleStyle={styles.title} />
             </Appbar.Header>
 
             <ScrollView>
@@ -114,13 +113,13 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   Content: {
-    color: "white", // Text color should match the overlay background color
+    color: "white",
     fontSize: 21,
     fontWeight: "400",
-    paddingLeft: 25,
-    paddingRight: 25,
+    paddingLeft: 20,
+    paddingRight: 20,
     textAlign: "justify",
   },
 });
 
-export default ShortStory;
+export default AnimalStory;

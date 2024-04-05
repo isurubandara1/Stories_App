@@ -21,6 +21,7 @@ import { ShortStory } from './ShortStory';
 import Home from './Home'; 
 import { AnimalStory }from './AnimalStory'; 
 import { MoralStory }from './MoralStory'; 
+import { LifeStory }from './LifeStory'; 
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,7 @@ export default function App() {
         <Stack.Screen name="ShortStory" component={ShortStory} options={{ headerShown: false }} /> 
         <Stack.Screen name="AnimalStory" component={AnimalStory} options={{ headerShown: false }} /> 
         <Stack.Screen name="MoralStory" component={MoralStory} options={{ headerShown: false }} /> 
+        <Stack.Screen name="LifeStory" component={LifeStory} options={{ headerShown: false }} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -28,7 +28,7 @@ const Home = () => {
             <TouchableOpacity onPress={() => navigation.navigate('MoralStory')} style={styles.imageButton}>
               <Text style={styles.imageButtonText}>Moral Stories</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.imageButton}>
+            <TouchableOpacity  onPress={() => navigation.navigate('LifeStory')}  style={styles.imageButton}>
               <Text style={styles.imageButtonText}>Life Stories</Text>
             </TouchableOpacity>
           </View>

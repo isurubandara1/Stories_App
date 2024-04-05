@@ -1,7 +1,9 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { View, Text, StyleSheet, Image, ScrollView, SafeAreaView, TouchableOpacity } from "react-native";
 
-const Home = ({ navigation }) => {
+const Home = () => {
+  const navigation=useNavigation()
   return (
     <SafeAreaView>
       <View style={{ backgroundColor: "black", height: "100%" }}>
@@ -23,7 +25,7 @@ const Home = ({ navigation }) => {
             </TouchableOpacity>
           </View>
           <View style={styles.row}>
-            <TouchableOpacity style={styles.imageButton}>
+            <TouchableOpacity onPress={() => navigation.navigate('MoralStory')} style={styles.imageButton}>
               <Text style={styles.imageButtonText}>Moral Stories</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.imageButton}>

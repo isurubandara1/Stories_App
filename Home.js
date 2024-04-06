@@ -33,10 +33,10 @@ const Home = () => {
             </TouchableOpacity>
           </View>
           <View style={styles.row}>
-            <TouchableOpacity style={styles.imageButton}>
+            <TouchableOpacity onPress={() => navigation.navigate('FunnyStory')} style={styles.imageButton}>
               <Text style={styles.imageButtonText}>Funny Stories</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.imageButton}>
+            <TouchableOpacity onPress={() => navigation.navigate('LoveStory')} style={styles.imageButton}>
               <Text style={styles.imageButtonText}>Love Stories</Text>
             </TouchableOpacity>
           </View>

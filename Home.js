@@ -5,17 +5,11 @@ import { View, Text, StyleSheet, Image, ScrollView, SafeAreaView, TouchableOpaci
 const Home = () => {
   const navigation = useNavigation();
 
-  const openDrawer = () => {
-    navigation.dispatch(DrawerActions.openDrawer());
-  };
 
   return (
     <SafeAreaView>
       <View style={{ backgroundColor: "black", height: "100%" }}>
         <View style={styles.appbar}>
-          <TouchableOpacity onPress={openDrawer} style={styles.drawerIcon}>
-            <Text style={styles.drawerIconText}>☰</Text>
-          </TouchableOpacity>
           <Text style={styles.appbarText}>Stories App</Text>
         </View>
 

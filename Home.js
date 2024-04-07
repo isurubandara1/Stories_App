@@ -1,13 +1,21 @@
-import { useNavigation } from "@react-navigation/native";
+import { useNavigation, DrawerActions } from "@react-navigation/native";
 import React from "react";
 import { View, Text, StyleSheet, Image, ScrollView, SafeAreaView, TouchableOpacity } from "react-native";
 
 const Home = () => {
-  const navigation=useNavigation()
+  const navigation = useNavigation();
+
+  const openDrawer = () => {
+    navigation.dispatch(DrawerActions.openDrawer());
+  };
+
   return (
     <SafeAreaView>
       <View style={{ backgroundColor: "black", height: "100%" }}>
         <View style={styles.appbar}>
+          <TouchableOpacity onPress={openDrawer} style={styles.drawerIcon}>
+            <Text style={styles.drawerIconText}>☰</Text>
+          </TouchableOpacity>
           <Text style={styles.appbarText}>Stories App</Text>
         </View>
 
@@ -28,7 +36,7 @@ const Home = () => {
             <TouchableOpacity onPress={() => navigation.navigate('MoralStory')} style={styles.imageButton}>
               <Text style={styles.imageButtonText}>Moral Stories</Text>
             </TouchableOpacity>
-            <TouchableOpacity  onPress={() => navigation.navigate('LifeStory')}  style={styles.imageButton}>
+            <TouchableOpacity onPress={() => navigation.navigate('LifeStory')} style={styles.imageButton}>
               <Text style={styles.imageButtonText}>Life Stories</Text>
             </TouchableOpacity>
           </View>
@@ -52,7 +60,17 @@ const styles = StyleSheet.create({
     height: 80,
     alignItems: "center",
     justifyContent: "center",
+    flexDirection: 'row',
     marginBottom: 20,
+  },
+  drawerIcon: {
+    position: 'absolute',
+    left: 10,
+    top: 30,
+  },
+  drawerIconText: {
+    fontSize: 30,
+    color: "white",
   },
   appbarText: {
     fontSize: 30,

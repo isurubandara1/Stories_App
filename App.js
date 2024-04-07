@@ -16,13 +16,13 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home"> 
-        <Stack.Screen name="Home" component={Home} options={{ headerShown: true }} /> 
-        <Stack.Screen name="ShortStory" component={ShortStory} options={{ headerShown: true }} /> 
-        <Stack.Screen name="AnimalStory" component={AnimalStory} options={{ headerShown: true }} /> 
-        <Stack.Screen name="MoralStory" component={MoralStory} options={{ headerShown: true }} /> 
-        <Stack.Screen name="LifeStory" component={LifeStory} options={{ headerShown: true }} /> 
-        <Stack.Screen name="FunnyStory" component={FunnyStory} options={{ headerShown: true }} /> 
-        <Stack.Screen name="LoveStory" component={LoveStory} options={{ headerShown: true }} /> 
+        <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} /> 
+        <Stack.Screen name="ShortStory" component={ShortStory} options={{ headerShown: false }} /> 
+        <Stack.Screen name="AnimalStory" component={AnimalStory} options={{ headerShown: false }} /> 
+        <Stack.Screen name="MoralStory" component={MoralStory} options={{ headerShown: false }} /> 
+        <Stack.Screen name="LifeStory" component={LifeStory} options={{ headerShown: false }} /> 
+        <Stack.Screen name="FunnyStory" component={FunnyStory} options={{ headerShown: false }} /> 
+        <Stack.Screen name="LoveStory" component={LoveStory} options={{ headerShown: false }} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );
